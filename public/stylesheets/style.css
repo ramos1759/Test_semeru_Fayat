@@ -27,10 +27,16 @@ h2{
 }
 .tableaux{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .enonce{
 
   margin: 1.5%;
   text-align: center;
+}
+.userTab{
+  margin-right: 50px;
+}
+.finsihTab{
+  margin-left: 50px;
 }
