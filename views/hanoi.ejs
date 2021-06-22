@@ -1,0 +1,30 @@
+<%- include('./header.ejs'); %>
+
+<h2>Exercice 3</h2>
+<div class="enonce">
+    <p>écrire une fonction hanoi(array) qui écrit dans la console les mouvements du jeu de Hanoi pour n disques à amener du piquet a au piquet b,</p>
+</div>
+
+<div class="exo1">
+    <form action="/hanoi" method="POST">
+        <div class="form-row">
+            <div class="col-md-3">
+                <input type="number" class="form-control" placeholder="5" name="nbDisk">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Valider le nombre</button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <ol>
+            <% for(var i = 0; i < hanoiTab.length; i++){ %>
+                <li><%= hanoiTab[i] %></li>
+            <% } %>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<%- include('./header.ejs'); %>
+
+<h2>Exercice 1</h2>
+<div class="exo1">
+
+    <form action="/" method="POST">
+        <div class="form-row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Entrez votre phrase" name="userText">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Valider la phrase</button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <ol>
+            <% for(var i = 0; i < newText.length; i++){ %>
+                <li><%= newText[i] %></li>
+            <% } %>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
